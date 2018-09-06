@@ -12,7 +12,13 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     // ktor http client
-    implementation "io.ktor:ktor-client:$ktor_version"
+    implementation "io.ktor:ktor-client-gson:$ktor_version"
+    implementation "io.ktor:ktor-client-json:$ktor_version"
+
+    // corutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$corutine_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$corutine_version"
+
 
 
     testImplementation "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version"

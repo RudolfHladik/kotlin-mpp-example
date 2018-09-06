@@ -1,2 +1,12 @@
 include ':app'
-includeBuild '../'
+//includeBuild '../'
+
+include ':greeting'
+include ':greeting:common'
+include ':greeting:android'
+
+project(':greeting').projectDir = file('../greeting')
+project(':greeting:common').projectDir = file('../greeting/common')
+project(':greeting:android').projectDir = file('../greeting/android')
+
+enableFeaturePreview('GRADLE_METADATA')
